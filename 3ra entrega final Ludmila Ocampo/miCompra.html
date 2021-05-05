@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" content="IE=edge">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible">
+	<link rel="icon" type="image/png" href="files/Picture/Icono.png" />
+	<link rel="stylesheet" href="files/css/estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="files/css/carousel.css">
+	<link rel="stylesheet" href="files/css/bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Rouge Velas</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="navbar">
+				<ul>
+
+					<a href="index.html">
+						<img class="navbar__img" src="files/Picture/Icono.png">
+					</a><a class="navbar__item" href="index.html">Rouge Velas</a>
+
+					<il>
+						<a class="navbar__item" href="nosotros.html">Nosotros</a>
+					</il>
+					<il>
+						<a class="navbar__item" href="productos.html">Productos</a>
+					</il>
+
+					<li style="position: relative;"><a class="navbar__item" href="miCompra.html">Mi compra</a>
+
+						<ul class="des">
+							<li>
+								<div class="des__item">
+									<img src="files/Picture/IMG.jpg">
+									<div class="etiqueta__datos">
+										<span>Nombre del producto</span>
+										<p></p>
+										<span>Precio: $ x</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="des__item">
+									<img src="files/Picture/IMG.jpg">
+									<div class="etiqueta__datos">
+										<span>Nombre del producto</span>
+										<p></p>
+										<span>Precio: $ x</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="des__item">
+									<img src="files/Picture/IMG.jpg">
+									<div class="etiqueta__datos">
+										<span>Nombre del producto</span>
+										<p></p>
+										<span>Precio: $ x</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+					</li>
+				</ul>
+
+
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="miCompraContainer">
+			<h1>Mi Compra</h1>
+			<form class="formulario">
+				<h2><b>Datos de Contacto</b></h2>
+
+				<li>
+					<label for="nombreApellido">Nombre y Apellido</label>
+					<input type="text" id="nombreApellido">
+				</li>
+				<li>
+					<label for="phone">Telefono</label>
+					<input type="number" id="phone">
+				</li>
+				<li>
+					<label for="email"> Email</label>
+					<input type="email" id="email">
+				</li>
+				<li>
+					<label for="adress">Direccion</label>
+					<input id="adress">
+				</li>
+				<li>
+					<label for="CP">CP (Codigo Postal)</label>
+					<input id="CP">
+				</li>
+				<li>
+					<label for="moreInfo">Dejanos algun Comentario</label>
+					<input id="moreInfo">
+				</li>
+				<li>
+					<button type="button" value="Comprar" data-toggle="modal" data-target="#myModal">
+						Comprar
+					</button>
+				</li>
+			</form>
+			<div class="modal" id="myModal" style="display: none;" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Datos de compra</h4>
+							<button type="button" class="close" data-dismiss="modal">×</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							<form class="formpopup">
+								<li>
+									<label for="nombreApellido">Nombre y Apellido:</label>
+									<a> Paula Stug</a>
+								</li>
+								<li>
+									<label for="phone">Telefono:</label>
+									<a>341...</a>
+								</li>
+								<li>
+									<label for="email"> Email:</label>
+									<a>stugpaula@email.com</a>
+								</li>
+								<li>
+									<label for="adress">Direccion:</label>
+									<a>Coder 404</a>
+								</li>
+								<li>
+									<label for="CP">CP (Codigo Postal):</label>
+									<a>404</a>
+								</li>
+								<li>
+									<label for="moreInfo">Comentario:</label>
+									<a>Excelentes productos, no puedo esperar a que me lleguen</a>
+								</li>
+							</form>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Continuar</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- TODO carrito -->
+			<div class="carrito">
+				<li>
+					<div class="des__item">
+						<img src="files/Picture/IMG.jpg">
+						<div class="etiqueta__datos">
+							<span>Nombre del producto</span>
+							<p></p>
+							<span>Precio: $ x</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="des__item">
+						<img src="files/Picture/IMG.jpg">
+						<div class="etiqueta__datos">
+							<span>Nombre del producto</span>
+							<p></p>
+							<span>Precio: $ x</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="des__item">
+						<img src="files/Picture/IMG.jpg">
+						<div class="etiqueta__datos">
+							<span>Nombre del producto</span>
+							<p></p>
+							<span>Precio: $ x</span>
+						</div>
+					</div>
+				</li>
+			</div>
+		</div>
+		<div class="separador"></div>
+	</main>
+	<footer>
+		<h2>Redes sociales</h2>
+		<div class="redes">
+			<div class="redes__instagram">
+				<h3>Instagram</h3>
+			</div>
+
+			<div class="redes__facebook">
+				<h3>Facebook</h3>
+			</div>
+
+			<div class="redes__whatsapp">
+				<h3>WhatsApp</h3>
+			</div>
+		</div>
+	</footer>
+</body>
+
+
+</html>
